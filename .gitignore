@@ -1,0 +1,12 @@
+/vendor/
+.idea
+*~
+*.DS_Store
+*.swp
+*.out
+*.bak
+.project
+.settings
+.buildpath
+composer.phar
+Thumbs.db

@@ -1,0 +1,31 @@
+{
+    "name": "mathiasgrimm/laravel-env-validator",
+    "description": "Laravel Validator for the .env file",
+    "authors": [
+        {
+            "name": "Mathias Grimm",
+            "email": "mathiasgrimm@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev" : {
+
+    },
+
+    "autoload": {
+        "psr-4": {
+            "MathiasGrimm\\LaravelEnvValidator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ],
+
+        "files" : [
+            "tests/EnvValidatorFactory.php"
+        ]
+    }
+}
