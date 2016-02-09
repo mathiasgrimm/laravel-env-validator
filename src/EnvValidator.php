@@ -31,7 +31,7 @@ class EnvValidator
      * @param ValidatorContract $validator
      * @return EnvValidator
      */
-    public function setValidator($validator)
+    public function setValidator(ValidatorContract $validator)
     {
         $this->validator = $validator;
         return $this;

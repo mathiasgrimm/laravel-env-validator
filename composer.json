@@ -21,11 +21,8 @@
     },
     "autoload-dev": {
         "classmap": [
-            "tests/TestCase.php"
-        ],
-
-        "files" : [
             "tests/EnvValidatorFactory.php"
         ]
+
     }
 }
