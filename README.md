@@ -51,6 +51,10 @@ return [
 
 ```
 
+## Screenshot
+
+![Screenshot](screenshot.png)
+
 ## Security
 
 If you discover any security related issues, please email mathiasgrimm@gmail.com instead of using the issue tracker.
