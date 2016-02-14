@@ -6,5 +6,5 @@
  */
 
 return [
-    'VAR_1' => 'required'
+//    'VAR_1' => 'required'
 ];

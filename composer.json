@@ -18,10 +18,5 @@
         "psr-4": {
             "MathiasGrimm\\LaravelEnvValidator\\": "src/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "MathiasGrimm\\LaravelEnvValidatorTest\\": "tests/"
-        }
     }
 }
