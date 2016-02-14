@@ -10,11 +10,6 @@ use Illuminate\Contracts\Validation\Validator as ValidatorContract;
 class EnvValidator
 {
     /**
-     * @var array
-     */
-    private $config;
-
-    /**
      * @var ValidatorContract
      */
     private $validator;
@@ -37,27 +32,8 @@ class EnvValidator
         return $this;
     }
 
-    /**
-     * @return EnvValidator
-     */
-    public function getConfig()
+    public function __construct(ValidatorContract $validator)
     {
-        return $this->config;
-    }
-
-    /**
-     * @param array $config
-     * @return EnvValidator
-     */
-    public function setConfig(array $config)
-    {
-        $this->config = $config;
-        return $this;
-    }
-
-    public function __construct(array $config, ValidatorContract $validator)
-    {
-        $this->config    = $config;
         $this->validator = $validator;
     }
 

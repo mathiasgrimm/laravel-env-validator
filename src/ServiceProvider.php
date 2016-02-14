@@ -15,6 +15,9 @@ class ServiceProvider extends Provider
         $this->publishes([
             __DIR__ . '/config/laravel-env-validator.php' => config_path('laravel-env-validator.php'),
         ], 'config');
+
+        $validator = EnvValidatorFactory::buildFromLaravelConfig();
+        $validator->validate();
     }
 
     /**
