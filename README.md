@@ -25,6 +25,16 @@ Plates is available via Composer:
 }
 ```
 
+```php
+// config/app.php
+
+'providers' => [
+    ...
+    'MathiasGrimm\LaravelEnvValidator\ServiceProvider',
+    ...
+],
+```
+
 ## Example
 ```php
 <?php
