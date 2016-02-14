@@ -1,4 +1,4 @@
-<?php
+<?php namespace MathiasGrimm\LaravelEnvValidatorTest;
 use MathiasGrimm\LaravelEnvValidator\EnvValidatorFactory as EnvValidatorFactorySrc;
 
 /**

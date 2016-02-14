@@ -20,9 +20,8 @@
         }
     },
     "autoload-dev": {
-        "classmap": [
-            "tests/EnvValidatorFactory.php"
-        ]
-
+        "psr-4": {
+            "MathiasGrimm\\LaravelEnvValidatorTest\\": "tests/"
+        }
     }
 }
