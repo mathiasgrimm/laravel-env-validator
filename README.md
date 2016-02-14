@@ -9,11 +9,13 @@ Laravel Env Validator is meant to validate your .env file in order to avoid any 
 
 ### Highlights
 
+- Make sure you don't go live without all required .env variables and without the correct values
 - Validate you env variables using the Laravel Validator by simple defining rules in a configuration file
+- Working in teams becomes easier
 
 ## Installation
 
-Plates is available via Composer:
+Laravel Env Validator is available via Composer:
 
 ```json
 {
@@ -57,6 +59,3 @@ If you discover any security related issues, please email mathiasgrimm@gmail.com
 
 - [Mathias Grimm](https://github.com/mathiasgrimm)
 
-## License
-
-The MIT License (MIT). Please see [License File](https://github.com/thephpleague/plates/blob/master/LICENSE) for more information.
