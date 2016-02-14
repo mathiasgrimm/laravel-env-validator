@@ -1,11 +1,11 @@
 Laravel Env Validator
 ======
 
-[![Author](http://img.shields.io/badge/author-@reinink-blue.svg?style=flat-square)](https://twitter.com/matgrimm)
-[![Source Code](http://img.shields.io/badge/source-league/plates-blue.svg?style=flat-square)](https://github.com/mathiasgrimm/laravel-env-validator)
-[![Latest Version](https://img.shields.io/github/release/thephpleague/plates.svg?style=flat-square)](https://github.com/mathiasgrimm/laravel-env-validator/releases)
+[![Author](http://img.shields.io/badge/author-@matgrimm-blue.svg?style=flat-square)](https://twitter.com/matgrimm)
+[![Source Code](http://img.shields.io/badge/source-mathiasgrimm/laravel-env-validator-blue.svg?style=flat-square)](https://github.com/mathiasgrimm/laravel-env-validator)
+[![Latest Version](https://img.shields.io/github/release/mathiasgrimm/laravel-env-validator.svg?style=flat-square)](https://github.com/mathiasgrimm/laravel-env-validator/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Total Downloads](https://img.shields.io/packagist/dt/league/plates.svg?style=flat-square)](https://packagist.org/packages/mathiasgrimm/laravel-env-validator)
+[![Total Downloads](https://img.shields.io/packagist/dt/mathiasgrimm/laravel-env-validator.svg?style=flat-square)](https://packagist.org/packages/mathiasgrimm/laravel-env-validator)
 
 Laravel Env Validator is meant to validate your .env file in order to avoid any unexpected behaviour for not having properly defined some variable or value. 
 
