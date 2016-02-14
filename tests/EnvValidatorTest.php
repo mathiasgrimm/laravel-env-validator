@@ -31,6 +31,8 @@ class EnvValidatorTest extends TestCase
         } catch (MathiasGrimm\LaravelEnvValidator\Exception $e) {
             $this->assertContains("The VAR_1 variable is not defined or invalid", $e->getMessage());
             $this->assertContains("The VAR_2 variable is not defined or invalid", $e->getMessage());
+        } catch (Exception $e) {
+            $this->fail("It should not get here!");
         }
     }
 
@@ -49,7 +51,7 @@ class EnvValidatorTest extends TestCase
             ]);
             $envValidator->validate();
             $this->assertTrue(true);
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $this->fail("It should not get here!");
         }
     }
@@ -63,5 +65,4 @@ class EnvValidatorTest extends TestCase
         $envValidator->validate();
         $this->assertTrue(true);
     }
-
 }
