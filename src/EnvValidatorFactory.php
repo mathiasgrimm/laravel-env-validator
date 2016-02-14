@@ -8,11 +8,16 @@ use Illuminate\Contracts\Validation\Validator;
  */
 class EnvValidatorFactory
 {
+    public static function buildFromValidator(Validator $validator)
+    {
+        return new EnvValidator($validator);
+    }
+
     public static function buildFromLaravelConfig()
     {
         $config    = \Config::get('laravel-env-validator');
         $validator = \Validator::make($_SERVER, $config);
 
-        return new EnvValidator($validator);
+        return static::buildFromValidator($validator);
     }
 }

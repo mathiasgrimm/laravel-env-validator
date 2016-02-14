@@ -15,6 +15,6 @@ class EnvValidatorFactory extends EnvValidatorFactorySrc
         $config     = array_merge($testConfig, $override);
         $validator  = \Validator::make($_SERVER, $config);
 
-        return static::buildFromConfig($config, $validator);
+        return static::buildFromValidator($validator);
     }
 }
