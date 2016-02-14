@@ -53,7 +53,11 @@ return [
 
 ## Screenshot
 
+### Command Line
 ![Screenshot](screenshot.png)
+
+### Browser
+![Screenshot](screenshot2.png)
 
 ## Security
 

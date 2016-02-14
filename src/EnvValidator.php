@@ -40,9 +40,16 @@ class EnvValidator
     public function validate()
     {
         if ($this->validator->fails()) {
+
+            $messages = [];
+
+            foreach ($this->validator->messages()->all("The :key variable is not defined or invalid") as $var => $message) {
+                $messages[] = $message;
+            }
+
             $msg = 'The .env file has some problems. Please check config/laravel-env-validator.php'
                 . PHP_EOL
-                . implode(PHP_EOL, $this->validator->messages()->all());
+                . implode(PHP_EOL, $messages);
 
             throw new Exception($msg);
         }
