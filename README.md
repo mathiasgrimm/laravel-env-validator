@@ -36,7 +36,7 @@ Plates is available via Composer:
 ```
 
 ```
-php artisan vendor:publish --provider="Vendor\Providers\DotEnvGenServiceProvider" --tag="config"
+php artisan vendor:publish --provider="MathiasGrimm\LaravelEnvValidator\ServiceProvider" --tag="config"
 ```
 
 ## Example
