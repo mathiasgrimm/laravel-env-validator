@@ -30,9 +30,13 @@ Plates is available via Composer:
 
 'providers' => [
     ...
-    'MathiasGrimm\LaravelEnvValidator\ServiceProvider',
+    MathiasGrimm\LaravelEnvValidator\ServiceProvider::class,
     ...
 ],
+```
+
+```
+php artisan vendor:publish --provider="Vendor\Providers\DotEnvGenServiceProvider" --tag="config"
 ```
 
 ## Example
