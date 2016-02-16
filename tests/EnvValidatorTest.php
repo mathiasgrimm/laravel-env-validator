@@ -18,8 +18,9 @@ class EnvValidatorTest extends TestCase
     public function it_has_the_right_error_message()
     {
         try {
-            unset($_SERVER['VAR_1']);
-            unset($_SERVER['VAR_2']);
+            // unset variables
+            putenv('VAR_1');
+            putenv('VAR_2');
 
             $envValidator = EnvValidatorFactory::buildFromTestConfig([
                 'VAR_1' => 'required',
@@ -42,8 +43,8 @@ class EnvValidatorTest extends TestCase
     public function it_does_not_throw_exception_if_validation_is_met()
     {
         try {
-            $_SERVER['VAR_1'] = '123';
-            $_SERVER['VAR_2'] = 'A';
+            putenv('VAR_1=123');
+            putenv('VAR_2=A');
 
             $envValidator = EnvValidatorFactory::buildFromTestConfig([
                 'VAR_1' => 'required',

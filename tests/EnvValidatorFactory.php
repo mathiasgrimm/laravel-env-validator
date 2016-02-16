@@ -14,7 +14,13 @@ class EnvValidatorFactory extends EnvValidatorFactorySrc
     {
         $testConfig = require __DIR__ . '/config/laravel-env-validator.php';
         $config     = array_merge($testConfig, $override);
-        $validator  = \Validator::make($_SERVER, $config);
+
+        $env = [];
+        foreach (array_keys($config) as $variable) {
+            $env[$variable] = env($variable);
+        }
+
+        $validator  = \Validator::make($env, $config);
 
         return static::buildFromValidator($validator);
     }
