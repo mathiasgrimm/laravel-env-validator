@@ -10,3 +10,4 @@
 .buildpath
 composer.phar
 Thumbs.db
+composer.lock
