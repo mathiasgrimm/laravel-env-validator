@@ -25,6 +25,12 @@ Laravel Env Validator is available via Composer:
 }
 ```
 
+## Setup
+
+### Laravel
+
+#### Register Service Provider
+
 ```php
 // config/app.php
 
@@ -35,11 +41,39 @@ Laravel Env Validator is available via Composer:
 ],
 ```
 
+#### Publish configuration file
+
 ```
 php artisan vendor:publish --provider="MathiasGrimm\LaravelEnvValidator\ServiceProvider" --tag="config"
 ```
 
-## Example
+### Lumen
+
+Manually copy the configuration file
+```
+vendor/mathiasgrimm/laravel-env-validator/src/config/laravel-env-validator.php
+``` 
+
+to 
+
+```
+config/laravel-env-validator.php
+``` 
+
+Register Service Provider in `bootstrap/app.php`:
+
+```php
+...
+$app->register(MathiasGrimm\LaravelEnvValidator\LumenServiceProvider::class);
+...
+```
+
+Load configuration file in `bootstrap/app.php`:
+```php
+$app->configure('laravel-env-validator');
+```
+
+## Example configuration file
 ```php
 <?php
 // config/laravel-env-validator.php
