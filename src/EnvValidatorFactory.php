@@ -15,8 +15,7 @@ class EnvValidatorFactory
 
     public static function buildFromLaravelConfig()
     {
-        $config    = \Config::get('laravel-env-validator');
-
+        $config    = config('laravel-env-validator');
         // there is a bug that would not load APP_ENV into $_SERVER or $_ENV
         // therefore I had to read based on what was defined in the config file
         $env = [];
